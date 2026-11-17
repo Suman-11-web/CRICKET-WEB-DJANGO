@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Sky and atmosphere gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041A0F" />
+      <stop offset="35%" stop-color="#0A2E1B" />
+      <stop offset="70%" stop-color="#14452B" />
+      <stop offset="100%" stop-color="#071D12" />
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="72%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.42" />
+      <stop offset="35%" stop-color="#F59E0B" stop-opacity="0.22" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#041A0F" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="stadiumBeamLeft" cx="25%" cy="12%" r="45%">
+      <stop offset="0%" stop-color="#ECFDF5" stop-opacity="0.30" />
+      <stop offset="40%" stop-color="#34D399" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#041A0F" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="outfieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D3B22" />
+      <stop offset="35%" stop-color="#134E2E" />
+      <stop offset="75%" stop-color="#0B331D" />
+      <stop offset="100%" stop-color="#051B0F" />
+    </linearGradient>
+
+    <linearGradient id="pitchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6B88A" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#B89768" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#785E3B" stop-opacity="0.25" />
+    </linearGradient>
+
+    <linearGradient id="jerseyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3D3E" />
+      <stop offset="55%" stop-color="#0B2728" />
+      <stop offset="100%" stop-color="#051314" />
+    </linearGradient>
+
+    <linearGradient id="batWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D299" />
+      <stop offset="50%" stop-color="#D9A760" />
+      <stop offset="100%" stop-color="#9A682A" />
+    </linearGradient>
+
+    <linearGradient id="stumpWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Sky -->
+  <rect width="1600" height="900" fill="url(#skyGrad)" />
+  <rect width="1600" height="900" fill="url(#sunGlow)" />
+  <rect width="1600" height="900" fill="url(#stadiumBeamLeft)" />
+
+  <!-- Distant Village Trees & Foliage Silhouette -->
+  <g fill="#062314" opacity="0.85">
+    <circle cx="140" cy="480" r="95" />
+    <circle cx="240" cy="465" r="110" />
+    <circle cx="360" cy="490" r="85" />
+    <circle cx="480" cy="475" r="105" />
+    <circle cx="620" cy="495" r="90" />
+    <circle cx="1290" cy="445" r="125" />
+    <circle cx="1430" cy="430" r="140" />
+    <circle cx="1550" cy="460" r="115" />
+  </g>
+
+  <!-- Stadium Floodlight Towers -->
+  <g opacity="0.55">
+    <line x1="340" y1="120" x2="360" y2="500" stroke="#94A3B8" stroke-width="5" />
+    <rect x="315" y="95" width="55" height="28" rx="4" fill="#F8FAFC" />
+    <circle cx="342" cy="109" r="48" fill="#FEF08A" opacity="0.35" />
+
+    <line x1="1380" y1="90" x2="1350" y2="490" stroke="#94A3B8" stroke-width="6" />
+    <rect x="1350" y="65" width="62" height="30" rx="4" fill="#F8FAFC" />
+    <circle cx="1381" cy="80" r="58" fill="#FEF08A" opacity="0.45" />
+  </g>
+
+  <!-- Crowd / Village Spectators Blur Silhouette -->
+  <g opacity="0.48">
+    <rect x="0" y="495" width="1600" height="68" fill="#081C15" />
+    <!-- Crowd heads and colorful jerseys -->
+    <g fill="#E2E8F0">
+      <circle cx="750" cy="512" r="12" fill="#F59E0B" />
+      <circle cx="785" cy="516" r="11" fill="#3B82F6" />
+      <circle cx="820" cy="510" r="13" fill="#10B981" />
+      <circle cx="860" cy="514" r="12" fill="#EF4444" />
+      <circle cx="900" cy="512" r="11" fill="#FBBF24" />
+      <circle cx="940" cy="515" r="13" fill="#60A5FA" />
+      <circle cx="1180" cy="512" r="12" fill="#F59E0B" />
+      <circle cx="1220" cy="508" r="14" fill="#EC4899" />
+      <circle cx="1265" cy="514" r="12" fill="#10B981" />
+      <circle cx="1310" cy="510" r="13" fill="#3B82F6" />
+      <circle cx="1355" cy="515" r="11" fill="#FBBF24" />
+      <circle cx="1400" cy="512" r="13" fill="#F87171" />
+      <circle cx="1450" cy="509" r="12" fill="#34D399" />
+    </g>
+  </g>
+
+  <!-- Lush Cricket Outfield -->
+  <path d="M 0 545 Q 800 515 1600 545 L 1600 900 L 0 900 Z" fill="url(#outfieldGrad)" />
+
+  <!-- Mowed Outfield Stripes -->
+  <g opacity="0.16" fill="#34D399">
+    <polygon points="150,900 450,535 560,535 340,900" />
+    <polygon points="560,900 720,530 830,530 760,900" />
+    <polygon points="980,900 990,530 1100,532 1190,900" />
+    <polygon points="1360,900 1260,538 1370,540 1560,900" />
+  </g>
+
+  <!-- Turf Pitch & Crease Lines -->
+  <polygon points="730,900 890,565 1135,565 1390,900" fill="url(#pitchGrad)" />
+  <line x1="820" y1="735" x2="1245" y2="735" stroke="#F8FAFC" stroke-width="4" stroke-opacity="0.55" />
+  <line x1="885" y1="615" x2="1150" y2="615" stroke="#F8FAFC" stroke-width="3" stroke-opacity="0.4" />
+
+  <!-- Wooden Cricket Stumps & Bails (Center-Right Foreground) -->
+  <g transform="translate(885, 575)">
+    <!-- Stump shadows -->
+    <ellipse cx="42" cy="255" rx="58" ry="10" fill="#021008" opacity="0.55" />
+    <!-- 3 Stumps -->
+    <rect x="10" y="0" width="11" height="255" rx="4" fill="url(#stumpWood)" />
+    <rect x="36" y="0" width="11" height="255" rx="4" fill="url(#stumpWood)" />
+    <rect x="62" y="0" width="11" height="255" rx="4" fill="url(#stumpWood)" />
+    <!-- Bails -->
+    <rect x="6" y="-8" width="33" height="7" rx="3" fill="#FDE68A" />
+    <rect x="42" y="-8" width="33" height="7" rx="3" fill="#FDE68A" />
+  </g>
+
+  <!-- Dynamic Cricketer / Batter Follow-Through (Right Side Showcase) -->
+  <g transform="translate(955, 85)">
+    <!-- Golden Rim Highlight Behind Batter -->
+    <circle cx="170" cy="280" r="220" fill="#FACC15" opacity="0.08" />
+
+    <!-- Raised Cricket Bat (High Follow-Through) -->
+    <g transform="translate(155, -20) rotate(-32)">
+      <!-- Bat Handle -->
+      <rect x="44" y="95" width="14" height="95" rx="6" fill="#F8FAFC" />
+      <rect x="44" y="115" width="14" height="10" fill="#10B981" />
+      <rect x="44" y="135" width="14" height="10" fill="#F59E0B" />
+      <!-- Bat Blade -->
+      <path d="M 32 0 L 68 0 L 72 100 L 28 100 Z" fill="url(#batWood)" stroke="#78350F" stroke-width="2" />
+      <line x1="50" y1="4" x2="50" y2="98" stroke="#FDE68A" stroke-width="3" opacity="0.55" />
+    </g>
+
+    <!-- Batter Arms & Batting Gloves -->
+    <path d="M 155 180 Q 210 120 190 68" fill="none" stroke="#D97706" stroke-width="26" stroke-linecap="round" />
+    <path d="M 110 205 Q 150 130 175 74" fill="none" stroke="#B45309" stroke-width="24" stroke-linecap="round" />
+    <!-- Batting Gloves -->
+    <circle cx="182" cy="68" r="18" fill="#F8FAFC" stroke="#10B981" stroke-width="4" />
+    <circle cx="168" cy="82" r="16" fill="#E2E8F0" stroke="#F59E0B" stroke-width="4" />
+
+    <!-- Cricket Helmet (Emerald & Gold Grille) -->
+    <g transform="translate(95, 118)">
+      <path d="M 10 45 C 10 5, 78 5, 82 45 L 92 52 L 10 56 Z" fill="#064E3B" stroke="#34D399" stroke-width="2.5" />
+      <path d="M 62 46 L 94 58 L 80 78 L 52 72 Z" fill="none" stroke="#FBBF24" stroke-width="3" />
+      <circle cx="42" cy="30" r="6" fill="#FACC15" />
+    </g>
+
+    <!-- Batter Torso / Back of Jersey ("ROYAL STRIKERS 18") -->
+    <path d="M 78 182 L 195 172 L 222 395 L 62 395 Z" fill="url(#jerseyGrad)" stroke="#F59E0B" stroke-width="2.5" />
+    <!-- Gold & Cyan Jersey Shoulder Accents -->
+    <path d="M 78 182 L 122 178 L 102 245 L 72 235 Z" fill="#F59E0B" opacity="0.88" />
+    <path d="M 195 172 L 160 175 L 178 242 L 205 228 Z" fill="#10B981" opacity="0.85" />
+
+    <!-- Jersey Back Text & Number -->
+    <g transform="translate(142, 248) rotate(-4)" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-weight="800">
+      <text x="0" y="0" font-size="19" letter-spacing="2" fill="#FDE68A">ROYAL</text>
+      <text x="0" y="22" font-size="20" letter-spacing="1.5" fill="#FFFFFF">STRIKERS</text>
+      <text x="0" y="92" font-size="74" font-weight="900" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2">18</text>
+    </g>
+
+    <!-- Lower Body & Batting Pads -->
+    <path d="M 68 392 L 216 392 L 238 615 L 155 615 L 142 485 L 118 615 L 48 615 Z" fill="#071E22" />
+    <!-- Leg Guards / Pads -->
+    <rect x="52" y="535" width="70" height="210" rx="22" fill="#0B2E33" stroke="#10B981" stroke-width="3" />
+    <rect x="156" y="535" width="72" height="210" rx="22" fill="#0B2E33" stroke="#F59E0B" stroke-width="3" />
+  </g>
+
+  <!-- Crimson Leather Cricket Ball Speed Trail -->
+  <g transform="translate(690, 145)">
+    <path d="M 280 85 Q 140 35 18 12" fill="none" stroke="#FDE047" stroke-width="4" stroke-dasharray="10 8" opacity="0.45" />
+    <circle cx="18" cy="12" r="14" fill="#DC2626" stroke="#FCA5A5" stroke-width="2" />
+    <path d="M 8 4 Q 18 12 28 20" fill="none" stroke="#FEF2F2" stroke-width="1.5" stroke-dasharray="2 2" />
+  </g>
+
+  <!-- Left Readability Gradient Overlay for Hero Typography -->
+  <linearGradient id="leftScrim" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#04180E" stop-opacity="0.92" />
+    <stop offset="48%" stop-color="#062113" stop-opacity="0.72" />
+    <stop offset="78%" stop-color="#082A18" stop-opacity="0.20" />
+    <stop offset="100%" stop-color="#082A18" stop-opacity="0.05" />
+  </linearGradient>
+  <rect width="1600" height="900" fill="url(#leftScrim)" />
+</svg>

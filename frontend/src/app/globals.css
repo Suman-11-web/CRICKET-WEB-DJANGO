@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #07150e;
+  color: #f8fafc;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.light body {
+  background-color: #f1f5f3;
+  color: #0f172a;
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(13, 35, 24, 0.92), rgba(7, 21, 14, 0.96));
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  backdrop-filter: blur(12px);
+}
+
+html.light .glass-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fde68a 0%, #f59e0b 55%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.08) 25%, rgba(16, 185, 129, 0.18) 50%, rgba(16, 185, 129, 0.08) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07150e;
+}
+::-webkit-scrollbar-thumb {
+  background: #14532d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eab308;
+}

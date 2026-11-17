@@ -1,0 +1,17 @@
+{
+  "name": "Village Cricket Live — Tournament & Live Score Portal",
+  "short_name": "VillageCricket",
+  "description": "Follow live village cricket scores, tournaments, teams, points tables, and champions in real time.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#04160E",
+  "theme_color": "#0B3B24",
+  "icons": [
+    {
+      "src": "/images/logo-crest.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
